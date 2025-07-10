@@ -1,0 +1,37 @@
+{
+  "name": "gmx.css",
+  "version": "0.0.26",
+  "description": "A micro Material Design 3 based CSS-only framework.",
+  "main": "dist/gmx.min.css",
+  "scripts": {
+    "build:gmx": "esbuild src/gmx.css --outfile=dist/gmx.css --bundle",
+    "build:gmx:min": "esbuild src/gmx.css --outfile=dist/gmx.min.css --bundle --minify",
+    "build:theme": "esbuild src/theme.css --outfile=dist/theme.css --bundle",
+    "build:theme:min": "esbuild src/theme.css --outfile=dist/theme.min.css --bundle --minify",
+    "build": "npm run build:gmx && npm run build:gmx:min && npm run build:theme && npm run build:theme:min"
+  },
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w3teal/gmx.css.git"
+  },
+  "keywords": [
+    "css",
+    "material",
+    "material-design",
+    "material-you",
+    "material-3"
+  ],
+  "author": "w3teal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/w3teal/gmx.css/issues"
+  },
+  "homepage": "https://github.com/w3teal/gmx.css#readme",
+  "devDependencies": {
+    "esbuild": "^0.25.1"
+  }
+}
